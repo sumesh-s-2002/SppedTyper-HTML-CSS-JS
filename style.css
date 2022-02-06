@@ -1,0 +1,137 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+}
+body{
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(63, 115, 157);
+    min-height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.header{
+    background-color: rgba(0,0,0,0.3);
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 50px;
+    display : flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    transform: translateY(-100%);
+    opacity: 0;
+    transition: opacity 300ms ease-in, transform 300ms ease-in-out;
+}
+.visible{
+    transform : translateY(0%);
+    opacity: 1;
+}
+
+.input-container #difficulty{
+    margin-left: 8px;
+}
+.input-container label{
+    font-size: 0.95rem;
+}
+#difficulty{
+    width: 120px;
+    padding : 3px;
+    background-color: rgb(201, 229, 238);
+    border-radius: 5px;
+    outline: none;
+}
+.config-container{
+    position: absolute;
+    bottom: 30px;
+    left: 30px;
+}
+.btn{
+    cursor: pointer;
+    border-radius: 8px;
+    padding : 5px 9px;
+    outline : none;
+    border: none;
+}
+.btn:focus{
+    outline : none;
+}
+.card-container{
+    display : flex;
+    flex-direction: column;
+    background-color: rgb(53, 99, 136);
+    color: white;
+    width: 500px;
+    padding : 30px;
+    align-items: center;
+    justify-content: center;
+    position : relative;
+    border-radius: 10px;
+    box-shadow: 0px 5px 10px 0px rgb(43, 80, 109);
+}
+.title{
+    background-color: rgba(0,0,0,.3);
+    width: 100%;
+    text-align: center;
+    padding : 5px 0px;
+    
+}
+.card-container .time-label{
+    position : absolute;
+    top: 70px;
+    left : 45px;
+    font-size: 0.9rem;
+    padding: 5px;
+}
+.card-container .score-label{
+    position: absolute;
+    right: 45px;
+    top: 70px;
+    padding: 5px;
+    font-size: 0.9rem;
+}
+.card-container p{
+    margin-top : 60px;
+    margin-bottom: 10px;
+}
+.card-container h1{
+    margin-bottom: 6px;
+}
+.card-container .input{
+    padding : 3px 8px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+}
+.input:focus{
+    border: none;
+    outline: none;
+}
+.gameover{
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom : 0;
+    top: 0;
+    border-radius: 5px;
+    background-color: rgb(0,0,0,0.7);
+    display : none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.gameover h1{
+    margin: 0 px;
+}
+.gameover .reload{
+    padding : 5px 12px;
+}
+.gameover p{
+    margin-top: 10px;
+    margin-bottom : 15px;
+}

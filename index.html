@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>speed Typer</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+</head>
+<body>
+    <div class="header visible">
+        <div class="input-container">
+            <label for="difficulty">Difficulty</label>
+            <select id="difficulty">
+                <option value="hard" class="item">Hard</option>
+                <option value="easy" class="item">Easy</option>
+                <option value="medium" class="item">Medium</option>
+            </select>
+        </div>
+    </div>
+    <div class="config-container">
+        <button class="config-button btn"><i class="fas fa-cog"></i></button>
+    </div>
+    <div class="main-container">
+        <div class="card-container">
+            <h2 class="title">Speed Typer</h2>
+            <p>Type the following</p>
+            <h1 class= "word">hellow</h1>
+            <input type="text" placeholder="Type the word" class="input">
+            <label class="time-label">Time left: <span class="time">10</span>s</label>
+            <label class= "score-label">Score: <span class="score">0</span></label>
+            <div class="gameover">
+                <h1>Time ran out</h1>
+                <p>your final score is <span class="final-score"></span></p>
+                <button class = "btn reload" onclick="window.location.reload()">Reload</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
